@@ -1,0 +1,126 @@
+{
+	"info": {
+		"_postman_id": "c294362c-ffb4-4fe4-828d-a73b5b0e5fd1",
+		"name": "Challenge_Chapter-3",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33061696"
+	},
+	"item": [
+		{
+			"name": "get cars",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/cars",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"cars"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get car by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/cars/6e2bc663-5197-441a-957b-bc75e4a2da7c",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"cars",
+						"6e2bc663-5197-441a-957b-bc75e4a2da7c"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post cars",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"plate\": \"DBH-3491\",\r\n        \"manufacture\": \"Toyota\",\r\n        \"model\": \"Supra\",\r\n        \"image\": \"./images/car01.min.jpg\",\r\n        \"rentPerDay\": 200000,\r\n        \"capacity\": 2,\r\n        \"description\": \" Brake assist. Leather-wrapped shift knob. Glove box lamp. Air conditioning w/in-cabin microfilter.\",\r\n        \"availableAt\": \"2022-03-23T15:49:05.563Z\",\r\n        \"transmission\": \"Automatic\",\r\n        \"available\": true,\r\n        \"type\": \"Sedan\",\r\n        \"year\": 2022,\r\n        \"options\": [\r\n            \"Cruise Control\",\r\n            \"Tinted Glass\",\r\n            \"Tinted Glass\",\r\n            \"Tinted Glass\",\r\n            \"AM/FM Stereo\"\r\n        ],\r\n        \"specs\": [\r\n            \"Brake assist\",\r\n            \"Leather-wrapped shift knob\",\r\n            \"Glove box lamp\",\r\n            \"Air conditioning w/in-cabin microfilter\",\r\n            \"Body color folding remote-controlled pwr mirrors\",\r\n            \"Dual-stage front airbags w/occupant classification system\"\r\n        ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/cars",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"cars"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "put cars by id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n            \"plate\": \"DBH-3491\",\r\n            \"manufacture\": \"Ford\",\r\n            \"model\": \"F150\",\r\n            \"image\": \"./images/car01.min.jpg\",\r\n            \"rentPerDay\": 400000,\r\n            \"capacity\": 4,\r\n            \"description\": \" Brake assist. Leather-wrapped shift knob. Glove box lamp. Air conditioning w/in-cabin microfilter.\",\r\n            \"availableAt\": \"2022-03-23T15:49:05.563Z\",\r\n            \"transmission\": \"Automatic\",\r\n            \"available\": true,\r\n            \"type\": \"Sedan\",\r\n            \"year\": 2022,\r\n            \"options\": [\r\n                \"Cruise Control\",\r\n                \"Tinted Glass\",\r\n                \"Tinted Glass\",\r\n                \"Tinted Glass\",\r\n                \"AM/FM Stereo\"\r\n            ],\r\n            \"specs\": [\r\n                \"Brake assist\",\r\n                \"Leather-wrapped shift knob\",\r\n                \"Glove box lamp\",\r\n                \"Air conditioning w/in-cabin microfilter\",\r\n                \"Body color folding remote-controlled pwr mirrors\",\r\n                \"Dual-stage front airbags w/occupant classification system\"\r\n            ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/cars/6e2bc663-5197-441a-957b-bc75e4a2da7c",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"cars",
+						"6e2bc663-5197-441a-957b-bc75e4a2da7c"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete cars by id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/cars/6e2bc663-5197-441a-957b-bc75e4a2da7c",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"cars",
+						"6e2bc663-5197-441a-957b-bc75e4a2da7c"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
